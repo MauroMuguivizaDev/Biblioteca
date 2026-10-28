@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca</h1>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <div>
+                <h2>Biblioteca</h2>
+                <p>Consulte os seus livros, organize-os também.</p>
+            </div>
+
+            <img src="livro.jpg" alt="Imagem de livro que apanhei por aí" class="imagem-livro">
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <h2>Lista de livros</h2>
+
+            <input
+                type="search"
+                id="pesquisa"
+                placeholder="Pesquisar por título ou autor..."
+                aria-label="Pesquisar livros"
+            >
+
+            <p id="total">Total de livros: 0</p>
+
+            <ul id="listaLivros"></ul>
+
+            <p id="mensagem"></p>
+        </section>
+
+        <section class="adicionar">
+            <h2>Adicionar livro</h2>
+
+            <form id="formLivro">
+                <label for="titulo">Título do livro</label>
+                <input type="text" id="titulo" required>
+
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" required>
+
+                <label for="categoria">Categoria</label>
+                <select id="categoria" required>
+                    <option value="">Seleciona uma categoria</option>
+                    <option value="Programação">Programação</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Literatura">Literatura</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <button type="submit">Adicionar livro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mauro Artur Muguiviza e Nico Microce Jr.</p>
+    </footer>
+
+</body>
+</html>
